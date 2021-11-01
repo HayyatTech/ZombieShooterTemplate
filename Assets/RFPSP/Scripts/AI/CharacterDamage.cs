@@ -191,7 +191,7 @@ public class CharacterDamage : MonoBehaviour {
 				if(!ragdollActive){
 
                     GameManager.Kills++;
-                    GameManager.CheckLevelProgress();
+                    GameManager.instance.CheckLevelProgress();
                     RagDollDie(hitBody, bodyForce);
 				}
 			}
